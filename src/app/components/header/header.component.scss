@@ -1,4 +1,57 @@
+@import url(../../../styles.scss);
+@import '../../../assets/mixins';
+
 .header {
   height: 165px;
-  background-color: #D9A91880;
+  background: #D9A91880;
+  @include for-phone-only {
+    height: 70px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 100px;
+    margin-left: 150px;
+    position: relative;
+    top: 30%;
+    @include for-phone-only {
+      justify-content: space-between;
+      margin-left: 50px;
+      margin-right: 20px;
+    }
+  }
+
+  &__image {
+    cursor: pointer;
+    @include for-phone-only {
+      height: 30px;
+      position: relative;
+      top: -10px;
+    }
+  }
+
+  &__ancora {
+    font-size: 36px;
+    cursor: pointer;
+    color: #1F0F2B;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    @include for-phone-only {
+      display: none;
+      width: 100vw;
+    }
+  }
+
+  &__menu {
+    display: none;
+    @include for-phone-only {
+      display: block;
+      position: relative;
+      top: -10px;
+    }
+  }
 }

@@ -1,0 +1,29 @@
+<div class="modal-adocao backdrop" *ngIf="modalAdocao">
+  <div class="modal-adocao__container">
+    <img class="modal-adocao__imagem" src="../../../assets/images/AdoptModalDog.svg">
+    <div>
+      <h2 class="modal-adocao__titulo">Você ganhou um novo amiguinho!</h2>
+      <p class="modal-adocao__texto">Obrigado por sua adoção, ficamos felizes por você e por ele!</p>
+    </div>
+  </div>
+  <img 
+    class="modal-adocao__close" 
+    src="../../../assets/images/Close.svg"
+    (click)="fechar()"  
+  >
+</div>
+
+<div class="modal-favorito background" *ngIf="modalFavorito">
+  <div class="modal-favorito__container">
+    <img class="modal-favorito__imagem" src="../../../assets/images/FavModalDog.svg">
+    <div class="teste">
+      <h2 class="modal-favorito__titulo">Favoritado com amor!</h2>
+      <p class="modal-favorito__texto">Obrigado por seu interesse em nossos amigos! Esperamos ansiosos pela sua adoção!</p>
+    </div>
+  </div>
+  <img 
+    class="modal-favorito__close" 
+    src="../../../assets/images/Close.svg"
+    (click)="fechar()"  
+  >
+</div>

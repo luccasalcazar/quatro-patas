@@ -1,0 +1,33 @@
+<div class="adote">
+  <div class="adote__container">
+    <div>
+      <img  class="adote__imagem" src="../../../assets/images/AdoptDog.svg" alt="Imagem de um cachorro">
+    </div>
+    <div class="adote__textos">
+      <div class="adote__titulo">
+        <h3>Adote Agora</h3>
+      </div>
+      <div class="adote__frases">
+        <p>Temos vários peludinhos esperando para fazer um lar mais feliz!</p>
+      </div>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="cards__centralizar" *ngFor="let item of animais">
+      <app-card
+        [nome]="item.nome"
+        [raca]="item.raca"
+        [src]="item.src"
+        (adocao)="abrirModalAdocao()"
+        (favoritar)="abrirModalFavorito()"
+      >
+      </app-card>
+    </div>
+  </div>
+</div>
+<app-modal 
+  [modalAdocao]="modalAdocao"
+  [modalFavorito]="modalFavorito"
+  (fecharModal)="fecharModal()"
+  >
+</app-modal>

@@ -1,0 +1,41 @@
+.card {
+  width: 360px;
+  height: 500px;
+  top: 647px;
+  left: 259px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 11px 10px 10px 0px #BF80FF40;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  &__nome {
+    color: #7918D9;
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 20px;
+    font-family: 'Nunito';
+  }
+
+  &__raca {
+    color: #8E8E8E;
+    font-weight: 300;
+    font-size: 22px;
+    font-family: 'Nunito';
+    padding-top: 20px;
+  }
+
+  &__botoes {
+    padding-top: 40px;
+    display: flex;
+    gap: 40px;
+  }
+}

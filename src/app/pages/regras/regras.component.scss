@@ -1,0 +1,79 @@
+@import url(../../../styles.scss);
+@import '../../../assets/mixins';
+
+.regras {
+  width: 100%;
+  padding: 100px 0;
+  @include for-phone-only {
+    padding: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__imagem {
+    @include for-phone-only {
+      padding-top: 30px;
+      max-width: 310px;
+    }
+  }
+
+  &__titulo {
+    @include for-phone-only {
+      width: 330px;
+      text-align: center;
+      margin: 0 auto;
+      margin: 30px 0
+    }
+  }
+
+  &__textos {
+    padding-left: 130px;
+    @include for-phone-only {
+      padding: 0;
+    }
+  }
+
+  &__frases {
+    max-width: 764px;
+    line-height: 35.46px;
+    font-size: 26px;
+    @include for-phone-only {
+      width: 330px;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: start;
+      margin: 0 auto;
+    }
+  }
+
+  &__container-topicos {
+    max-width: 764px;
+    margin-top: 40px;
+  }
+  
+  &__topicos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  &__margem-texto {
+    padding-top: 40px;
+    @include for-phone-only {
+     text-align: center;
+     margin-bottom: 30px;
+    }
+  }
+}

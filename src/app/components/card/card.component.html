@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card__container">
+    <div>
+      <img [src]="src">
+    </div>
+    <div class="card__nome">{{ nome }}</div>
+    <div class="card__raca">{{ raca }}</div>
+    <div class="card__botoes">
+      <app-like-button (favoritar)="validarSeFoiFavoritado($event)">
+      </app-like-button>
+      <app-button 
+        [texto]="'Adote agora'"
+        [cor]="'roxo'"
+        [card]="true"
+        (click)="fazerAdocao()"
+      >
+      </app-button>
+    </div>
+  </div>
+</div>

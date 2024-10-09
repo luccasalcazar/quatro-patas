@@ -1,0 +1,31 @@
+<div class="home">
+  <div class="home__container">
+    <div>
+      <img class="home__imagem" src="../../../assets/images/HomeDog.svg" alt="Mulher tirando foto com cachorro">
+    </div>
+    <div class="home__textos">
+      <div class="home__titulo">
+        <h3>Procurando um novo amigo?</h3>
+      </div>
+      <div class="home__frases">
+        <p>A <span class="bold">Quatro Patas </span>pode ajudar nessa missão!</p>
+        <p>Doguinhos e Gatinhos estão esperando para fazer você feliz!</p>
+        <p>Adote agora mesmo</p>
+      </div>
+      <div class="botoes">
+        <app-button 
+          [texto]="'Adote agora'" 
+          [cor]="'roxo'"
+          [routerLink]="['/adote']"
+          >
+        </app-button>
+        <app-button 
+          [texto]="'Nossas Regras'" 
+          [cor]="'branco'"
+          [routerLink]="['/regras']"
+          >
+        </app-button>
+      </div>
+    </div>
+  </div>
+</div>

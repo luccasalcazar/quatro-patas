@@ -1,0 +1,8 @@
+<button
+  class="botao bold"
+  [ngClass]="[
+    cor == 'roxo' ? 'background-color-roxo' : 'background-color-branco',
+    card == true ? 'botao__pequeno' : ''
+    ]"
+>{{ texto }}
+</button>

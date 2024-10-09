@@ -1,0 +1,18 @@
+.botao {
+  width: 60px;
+  height: 52px;
+  border-radius: 10px;
+  border: none;
+  background: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    box-shadow: 8px 8px 20px 0px #7918D980;
+    cursor: pointer;
+  }
+}
+
+.ativado {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(95%) saturate(1846%) hue-rotate(327deg) brightness(97%) contrast(96%);
+}

@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(./assets/_mixins.scss);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  src: url('assets/fonts/Amatic_SC/AmaticSC.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('assets/fonts/Nunito/Nunito.ttf')
+}
+
+p, span {
+  font-family: 'Nunito';
+}
+
+h1, h2, h3, a {
+  font-family: 'Amatic SC';
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 100px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 50px;
+  }
+}
